@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Fiiranek/ToDoApp/static/css/main.4674f602.chunk.css",
-    "main.js": "/Fiiranek/ToDoApp/static/js/main.117d3bd5.chunk.js",
-    "main.js.map": "/Fiiranek/ToDoApp/static/js/main.117d3bd5.chunk.js.map",
+    "main.js": "/Fiiranek/ToDoApp/static/js/main.6d722514.chunk.js",
+    "main.js.map": "/Fiiranek/ToDoApp/static/js/main.6d722514.chunk.js.map",
     "runtime-main.js": "/Fiiranek/ToDoApp/static/js/runtime-main.a55fd99d.js",
     "runtime-main.js.map": "/Fiiranek/ToDoApp/static/js/runtime-main.a55fd99d.js.map",
     "static/js/2.f52aff58.chunk.js": "/Fiiranek/ToDoApp/static/js/2.f52aff58.chunk.js",
     "static/js/2.f52aff58.chunk.js.map": "/Fiiranek/ToDoApp/static/js/2.f52aff58.chunk.js.map",
     "index.html": "/Fiiranek/ToDoApp/index.html",
-    "precache-manifest.4305fb62548158f89409402385a8bd3c.js": "/Fiiranek/ToDoApp/precache-manifest.4305fb62548158f89409402385a8bd3c.js",
+    "precache-manifest.8533514a4c08d9232b0a9f67435750f5.js": "/Fiiranek/ToDoApp/precache-manifest.8533514a4c08d9232b0a9f67435750f5.js",
     "service-worker.js": "/Fiiranek/ToDoApp/service-worker.js",
     "static/css/main.4674f602.chunk.css.map": "/Fiiranek/ToDoApp/static/css/main.4674f602.chunk.css.map",
     "static/js/2.f52aff58.chunk.js.LICENSE.txt": "/Fiiranek/ToDoApp/static/js/2.f52aff58.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a55fd99d.js",
     "static/js/2.f52aff58.chunk.js",
     "static/css/main.4674f602.chunk.css",
-    "static/js/main.117d3bd5.chunk.js"
+    "static/js/main.6d722514.chunk.js"
   ]
 }
