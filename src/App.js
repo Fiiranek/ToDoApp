@@ -5,42 +5,43 @@ import AddTodo from './AddTodo';
 
 function App() {
   
-  var todossessionStorage = JSON.parse(sessionStorage.getItem("todos"))
+  // var todossessionStorage = JSON.parse(sessionStorage.getItem("todos"))
 
-  const getTodos = (todos) => {
-    todos = JSON.parse(sessionStorage.getItem("todos"))
-    if(todossessionStorage == null) todossessionStorage = []
-  }
+  // const getTodos = (todos) => {
+  //   todos = JSON.parse(sessionStorage.getItem("todos"))
+  //   if(todossessionStorage == null) todossessionStorage = []
+  // }
 
-  const pushTodos = (newTodos) => {
-    sessionStorage.setItem("todos",JSON.stringify(newTodos))
-  }
+  // const pushTodos = (newTodos) => {
+  //   sessionStorage.setItem("todos",JSON.stringify(newTodos))
+  // }
 
 
-   const [todos, setTodos] = useState(todossessionStorage == null ? [] : todossessionStorage)
-  getTodos(todos)
+   const [todos, setTodos] = useState([])
+   //const [todos, setTodos] = useState(todossessionStorage == null ? [] : todossessionStorage)
+  //getTodos(todos)
 
   const addTodo = (title) => {
     const newTodos = [...todos,{title}];
     setTodos(newTodos);
-    pushTodos(newTodos)
-    getTodos(todos)
+    //pushTodos(newTodos)
+    //getTodos(todos)
   }
 
   const finishTodo = (index) =>{
     const newTodos = [...todos]
     newTodos[index].finished = true
     setTodos(newTodos)
-    pushTodos(newTodos)
-    getTodos(todos)
+    // pushTodos(newTodos)
+    // getTodos(todos)
   }
 
   const deleteTodo = (index) => {
     const newTodos = [...todos]
     newTodos.splice(index,1)
     setTodos(newTodos)
-    pushTodos(newTodos)
-    getTodos(todos)
+    // pushTodos(newTodos)
+    // getTodos(todos)
   }
 
   return (
