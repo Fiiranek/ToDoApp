@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo{
+font-size: 1.6rem;
+display: flex;
+justify-content: space-between;
+margin-top: 1rem;
+}
+.container{
+  border: 1px solid grey;
+  padding: 1rem;
+}
+input{
+border: none;
+padding: 1rem;
+border: 1px solid rgb(64, 64, 187);
+font-size: 1.2rem;
+margin-bottom: 1rem;
+}
+.todos{
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 1rem;
+}
+.last{
+  margin-left: 1rem;
+}
+.finish{
+  color: rgb(44, 173, 44);
+}
+.delete{
+  color: rgb(202, 68, 68);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete:hover{
+  color: rgb(206, 24, 24);
+}
+
+.finish:hover{
+  color: rgb(17, 148, 17);
+}
+
+.icon-button{
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+.icon-button:focus{
+  outline: none;
 }
