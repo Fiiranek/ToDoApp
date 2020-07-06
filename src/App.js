@@ -5,19 +5,19 @@ import AddTodo from './AddTodo';
 
 function App() {
   
-  var todosLocalStorage = JSON.parse(localStorage.getItem("todos"))
+  var todossessionStorage = JSON.parse(sessionStorage.getItem("todos"))
 
   const getTodos = (todos) => {
-    todos = JSON.parse(localStorage.getItem("todos"))
-    if(todosLocalStorage == null) todosLocalStorage = []
+    todos = JSON.parse(sessionStorage.getItem("todos"))
+    if(todossessionStorage == null) todossessionStorage = []
   }
 
   const pushTodos = (newTodos) => {
-    localStorage.setItem("todos",JSON.stringify(newTodos))
+    sessionStorage.setItem("todos",JSON.stringify(newTodos))
   }
 
 
-   const [todos, setTodos] = useState(todosLocalStorage == null ? [] : todosLocalStorage)
+   const [todos, setTodos] = useState(todossessionStorage == null ? [] : todossessionStorage)
   getTodos(todos)
 
   const addTodo = (title) => {
